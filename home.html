@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Navigasi Bar</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <style>
+        .custom-bg {
+            background-image: url('DSCF1483.jpeg'); 
+            background-size: cover;
+            background-position: center;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <!-- Navigasi Bar -->
+    <nav class="bg-blue-500 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a class="text-white text-2xl font-bold" href="#">Imran Hidajat</a>
+            <div class="hidden md:flex">
+                <a class="text-white mx-4" href="#beranda">Beranda</a>
+                <a class="text-white mx-4" href="#index">Index</a>
+                <a class="text-white mx-4" href="#jadwal-kuliah">Jadwal Mata kuliah</a>
+                <a class="text-white mx-4" href="#buku-tamu">Buku tamu</a>
+            </div>
+            <div class="md:hidden">
+                <button class="text-white">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+     
+    <section id="beranda" class="custom-bg relative h-screen">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="container mx-auto text-center relative z-10 py-32 text-white">
+            <h1 class="text-5xl font-bold mb-4">Muhammad Imran Hidajat Hamzah</h1>
+            <p class="text-xl mb-8">Website ini didedikasikan untuk memenuhi penugasan mata kuliah pemrograman web</p>
+            <a href="artikel.html" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-full text-lg transition duration-300 ease-in-out hover:scale-105">About Me</a>
+        </div>
+    </section>
+    
+    <section id="index" class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Index</h2>
+            <p class="text-lg text-gray-600 mb-8">Halaman Index ini berisi tentang salah satu penugasan yang pernah saya buat dimata kuliah ini.</p>
+            <a href="index.html" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-full text-lg transition duration-300 ease-in-out hover:scale-105">Lanjutkan ke Index</a>
+        </div>
+    </section>
+
+    <section id="jadwal-kuliah" class="py-8">
+    <h2 class="text-3xl font-bold mb-8 text-center mb-4 text-gray-700">Jadwal Kuliah</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="border p-4 rounded-md shadow-md">
+            <h3 class="text-lg font-semibold text-blue-500 mb-2">Senin</h3>
+            <p><span class="font-semibold">Jaringan Komputer:</span> 10.05 - 12.40<br>
+                <span class="font-semibold">Kecerdasan Buatan:</span> 07.30 - 10.05</p>
+        </div>
+        <div class="border p-4 rounded-md shadow-md">
+            <h3 class="text-lg font-semibold text-blue-500 mb-2">Selasa</h3>
+            <p><span class="font-semibold">Profesi Kependidikan:</span> 13.10 - 14.50<br>
+                <span class="font-semibold">Struktur Data:</span> 07.30 - 10.05</p>
+        </div>
+        <div class="border p-4 rounded-md shadow-md">
+            <h3 class="text-lg font-semibold text-blue-500 mb-2">Rabu</h3>
+            <p><span class="font-semibold">Struktur Data:</span> 07.30 - 10.05<br>
+                <span class="font-semibold">Keamanan Komputer:</span> 14.50 - 17.50</p>
+        </div>
+        <div class="border p-4 rounded-md shadow-md">
+            <h3 class="text-lg font-semibold text-blue-500 mb-2">Kamis</h3>
+            <p><span class="font-semibold">Strategi Pembelajaran:</span> 10.05 - 12.40<br>
+                <span class="font-semibold">Pemrograman Web:</span> 13.10 - 15.40</p>
+        </div>
+        <div class="border p-4 rounded-md shadow-md">
+            <h3 class="text-lg font-semibold text-blue-500 mb-2">Jumat</h3>
+            <p><span class="font-semibold">Inovasi Teknologi:</span> 12.10 - 14.50</p>
+        </div>
+    </div>
+    </section>
+
+    </section>
+    <section id="buku-tamu" class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Buku Tamu</h2>
+            <p class="text-lg text-gray-600 mb-8">Ini merupakan sebuah page html berupa form.</p>
+            <a href="buku_tamu.html" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-full text-lg transition duration-300 ease-in-out hover:scale-105">Lanjutkan ke buku tamu</a>
+        </div>
+    </section>
+    
+    <footer align="center">
+        <p>&copy; 2023 Muh Imran Hidajat 
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
